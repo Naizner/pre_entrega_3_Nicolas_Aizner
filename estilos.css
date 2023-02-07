@@ -1,0 +1,288 @@
+.tituloApp {
+    text-align: center;
+}
+
+.tituloTipoUso {
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 15px;
+}
+
+.divInicial {
+    margin: auto;
+    padding: 20px;
+    height: 60%;
+    width: 60%;
+}
+
+#insertarResultado {
+    text-align: center;
+
+}
+
+#insertarResultado h3 {
+    font-size: 32px;
+    color: #0971e9;
+
+
+}
+
+
+#insertarResultado p {
+    font-size: 28px;
+
+
+}
+
+
+
+
+/* Estilos Generales de Seccion */
+
+
+
+h1 {
+    font-size: 2.0rem;
+    font-family: 'Rubik Dirt', cursive; 
+    
+}
+
+
+
+
+#resultadoTipoHogar label {
+    padding-right: 15px;
+    float: left;
+    padding-left: 40px;
+}
+
+#resultadoTipoHogar input {
+    max-width: 20%;
+    float: right;
+    border-radius: 10%;
+    border: 2px solid #dddde7;
+
+}
+
+
+
+.hogar input {
+    margin-left: 10px;
+    ;
+}
+
+
+.seccion-inicial {
+    color: white;
+    background-color: #190944;
+    padding: 20px; 
+    
+
+}
+
+section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.seccion-clara {
+    color: black;
+    background-color: whitesmoke;
+}
+
+/* Selector de tipo de uso*/
+
+.selectTipoUso {
+    max-width: 600px;
+}
+
+.ingresoTipoUso {
+    padding: 10px;
+    
+    
+}
+
+
+
+
+.ingresoTipoUso .contenedor {
+    max-width: 1100px;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(#131042,#0971e9);
+    margin: 20px;
+    
+}
+
+.ingresoTipoUso .contenedor h2 {
+    font-size: 1.5rem;
+}
+
+
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+
+}
+
+.botonCalcular {
+    border: 2px solid #1b1b32;
+    
+}
+
+/* Experiencia */
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+
+.badge {
+    margin: 5px;
+}
+
+/* Seccion Proyectos / Portfolio*/
+
+
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.proyecto:hover .overlay {
+    opacity: 1;
+
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+    
+}
+
+/* Productos */
+
+img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px !important;
+}
+
+.producto-contenedor {
+    display: grid;
+    gap: 1rem;
+    max-width: 30rem;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#producto-contenedor {
+    display: grid;
+    gap: 1rem;
+    max-width: 60rem;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#producto-totales {
+    display: grid;
+    gap: 1rem;
+    max-width: 60rem;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px 0px;
+}
+
+.card .card-image .card-title {
+    color: rgb(48, 76, 147);
+    font-size: 20px;
+    position: unset
+  }
+
+/* Adaptable responsivo */
+
+
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+    
+    .overlay i {
+        font-size: 40px;
+    }
+
+}
+
+
+
+
+
+
+
+

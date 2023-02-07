@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Script para relacionar con archivo JavasCript APP-->
+    <script async src="app.js"></script>
+    <!--Bootsrap para dar estilos a algunos elementos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Enlace a estios.css-->
+    <link href="estilos.css" rel="stylesheet">
+    <!--Bootsrap para Iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <h1 class="tituloApp">Calculadora de Potencia de Grupo Electrógeno</h1>
+    <div id="insertarRecomendados" class="producto-contenedor">
+    </div>
+    <section class="ingresoTipoUso seccion-inicial">
+        
+        
+        <h2 class="tituloTipoUso">Ingrese que tipo de Uso que le dará al Generador Eléctrico</h2>
+        <div class="d-flex justify-content-center align-items-center divInicial">
+            <select id="tipoCliente" class="form-select form-select-lg mb-3 selectTipoUso" aria-label=".form-select-lg example">
+                <option selected value="0">Eliga el tipo de uso</option>
+                <option value="1">Uso para el Hogar</option>
+                <option value="2">Pequeños comercios</option>
+                <option value="3">Grandes comercios / Industria</option>
+            </select>
+        </div>
+        <!-- Este es el DIV en donde aparecerá el formulario luego del Select -->
+        <div id="insertarDiv"></div>
+        <!--
+        <div class="contenedor" id="divResultadoTipo">
+            <h2 class="seccion-titulo">Completa con los equipos eléctricos indispensables</h2>
+            <p class="seccion texto">Calcularemos la potencia requerida para sostener tus instalaciones y te sugeriremos distintos modelos de Generadores Eléctricos.</p>
+            <form class="row g-3 " id="resultadoTipoHogar">
+                <div class="col-sm-12 col-md-6 col-lg-6 divInputs">
+                    <label>Metros cuadrados</label>
+                    <input type="number" placeholder="M2" id="metrosCuadrados" required>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 hogar divInputs">
+                    <label>Estufas eléctricas</label>
+                    <div class="divs">
+                        <input type="number" placeholder="Watts" id="estufasWatt" value="">
+                        <input type="number" placeholder="Estufas" id="estufas" value="">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 hogar divInputs">
+                    <label>Cantidad de cocinas</label>
+                    <div>
+                        <input type="number" placeholder="Watts" id="cocinasWatt" value="">
+                        <input type="number" placeholder="Cocinas" id="cocinas" value="" >
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 hogar divInputs">
+                    <label>Heladeras</label>
+                    <input type="number" placeholder="Watts" id="heladerasWatt" value="">
+                    <input type="number" placeholder="Heladeras" id="heladeras" required value="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 hogar divInputs">
+                    <label>Microondas</label>
+                    <input type="number" placeholder="Watts" id="microWatt" value="">
+                    <input type="number" placeholder="Microondas" id="microondas" value="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 hogar divInputs">
+                    <label>Aires Acondicionados</label>
+                    <input type="number" placeholder="Watts" id="aireWatt" value="">
+                    <input type="number" placeholder="A/C" id="aireAcond" value="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 hogar divInputs">
+                    <label>Freezer de pozo</label>
+                    <input type="number" placeholder="Watts" id="freezerWatt" value="">
+                    <input type="number" placeholder="Freezer" id="freezer" value="">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 hogar divInputs">
+                    <label>Otros / En Watt</label>
+                    <input type="number" placeholder="Watt" id="otrosWatt" value="">
+                </div>
+                <button type="submit" class="botonCalcular btn btn-primary btn-lg divInputs">
+                    Calcular
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </button>
+            </form>
+        </div>  -->
+    </section>
+    <!--Div para Insertar Mensaje de Resultado de cálculo-->
+    <div id="insertarResultado"></div>
+    <div id="producto-contenedor" class="producto-contenedor"></div>
+    <div id="producto-totales"></div>
+    
+        
+    <section class="experiencia seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!-- Desarrollo Web -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-truck"></i>
+                    <p class="experiencia-titulo">Envíos a todo el País</p>
+                    <p>Múltiples opciones de envío para que puedas tener tu Generador Eléctrico lo antes posible. Realizamos envíos a todo el País </p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Correo Oca</span>
+                        <span class="badge text-bg-primary">Encomiendas</span>
+                        <span class="badge text-bg-primary">Andrani</span>
+                    </div>  
+                </div>  
+                <!-- Proyectos -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-award"></i>
+                    <p class="experiencia-titulo">Garantía 1 año</p>
+                    <p>Todos nuestros equipos cuentan con garantía de 1 año desde su instalación. Además tenemos garantía en Reparaciobes de Generadores eléctricos o Servicio técnico. </p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">12 MESES</span>
+                        <span class="badge text-bg-primary">PROTECCION TOTAL</span>
+                    </div>  
+                </div>  
+                <!-- Formación -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-whatsapp"></i>
+                    <p class="experiencia-titulo">WhatsApp</p>
+                    <p>¿Te quedaron dudas?. Comunicate ahora a nuestro WatsApp y un asesor especializado te ayudará para que encuentres tu mejor Generador </p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Asesoramiento</span>
+                        <span class="badge text-bg-primary">Presupuestos</span>
+                        <span class="badge text-bg-primary">Ayuda</span>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
